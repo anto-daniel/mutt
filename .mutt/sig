@@ -1,5 +1,0 @@
-# vim: set et ft=muttrc ts=4 sw=4 tw=0:
-
-set nosig_dashes
-set sig_on_top
-set signature='~/.mutt/signature'
