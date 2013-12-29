@@ -1,0 +1,104 @@
+
+
+    Explore
+    Gist
+    Help
+
+    anto-daniel
+
+    1
+    0
+    0
+
+public anto-daniel/mutt-config
+
+mutt-config /
+
+or cancel
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+# vim: set et ft=ini ts=4 sw=4 tw=0:
+[general]
+ui = TTY.TTYUI
+accounts = anto.daniel@inmobi.com
+#pythonfile=~/.mutt/offlineimap.py
+#fsync = False
+[Account anto.daniel@inmobi.com]
+localrepository = anto.daniel@inmobi.com-Local
+remoterepository = anto.daniel@inmobi.com-Remote
+#status_backend = sqlite
+[Repository anto.daniel@inmobi.com-Local]
+type = Maildir
+localfolders = ~/.mail/anto.daniel.inmobi.com
+nametrans = lambda folder: {'drafts':  '[Gmail]/Drafts',
+                            'sent':    '[Gmail]/Sent Mail',
+                            'flagged': '[Gmail]/Starred',
+                            'trash':   '[Gmail]/Trash',
+                            'archive': '[Gmail]/All Mail',
+                            'spam': '[Gmail]/Spam',
+                            }.get(folder, folder)
+[Repository anto.daniel@inmobi.com-Remote]
+#maxconnections = 1
+type = Gmail
+remoteuser = anto.daniel@inmobi.com
+remotepass = !ds01is5
+#realdelete = no
+#cert_fingerprint=6d1b5b5ee0180ab493b71d3b94534b5ab937d042
+#remotepasseval = get_keychain_pass(account="anto.daniel@inmobi.com", server="imap.gmail.com")
+realdelete = no
+nametrans = lambda folder: {'[Gmail]/Drafts':    'drafts',
+                            '[Gmail]/Sent Mail': 'sent',
+                            '[Gmail]/Starred':   'flagged',
+                            '[Gmail]/Trash':     'trash',
+                            '[Gmail]/All Mail':  'archive',
+Commit summary: Extended description: (optional)
+anto-daniel anto.daniel@inmobi.com
+
+    API
+    Training
+    Shop
+
+    © 2013 GitHub, Inc.
+    Features
+    Help
+    Support
+
+
