@@ -1,0 +1,6 @@
+# HTML
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+
+# Calendar/iCal
+text/calendar;icalmutt.rb -i 'mailto:anto.daniel@inmobi.com' %s;
+application/ics;icalmutt.rb -i 'mailto:anto.daniel@inmobi.com' %s;
